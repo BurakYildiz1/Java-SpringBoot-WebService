@@ -1,0 +1,10 @@
+[{"id":1,"name":"Marlite Panels (FED)","price":"1.32","imageUrl":"http://dummyimage.com/222x100.png/ff4444/ffffff","categoryId":10,"isActive":false},
+{"id":2,"name":"Framing (Steel)","price":"9.85","imageUrl":"http://dummyimage.com/124x100.png/5fa2dd/ffffff","categoryId":9,"isActive":true},
+{"id":3,"name":"Roofing (Asphalt)","price":"7.72","imageUrl":"http://dummyimage.com/168x100.png/5fa2dd/ffffff","categoryId":8,"isActive":true},
+{"id":4,"name":"Casework","price":"0.91","imageUrl":"http://dummyimage.com/159x100.png/5fa2dd/ffffff","categoryId":7,"isActive":true},
+{"id":5,"name":"Retaining Wall and Brick Pavers","price":"9.71","imageUrl":"http://dummyimage.com/143x100.png/dddddd/000000","categoryId":3,"isActive":true},
+{"id":6,"name":"Soft Flooring and Base","price":"9.01","imageUrl":"http://dummyimage.com/227x100.png/5fa2dd/ffffff","categoryId":3,"isActive":false},
+{"id":7,"name":"Soft Flooring and Base","price":"0.46","imageUrl":"http://dummyimage.com/151x100.png/5fa2dd/ffffff","categoryId":2,"isActive":false},
+{"id":8,"name":"Retaining Wall and Brick Pavers","price":"4.08","imageUrl":"http://dummyimage.com/121x100.png/cc0000/ffffff","categoryId":7,"isActive":true},
+{"id":9,"name":"Landscaping & Irrigation","price":"3.41","imageUrl":"http://dummyimage.com/110x100.png/cc0000/ffffff","categoryId":10,"isActive":true},
+{"id":10,"name":"Prefabricated Aluminum Metal Canopies","price":"2.14","imageUrl":"http://dummyimage.com/123x100.png/cc0000/ffffff","categoryId":9,"isActive":false}]

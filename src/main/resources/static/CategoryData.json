@@ -1,0 +1,10 @@
+[{"id":1,"name":"Granite Surfaces","isActive":false},
+{"id":2,"name":"Hard Tile & Stone","isActive":true},
+{"id":3,"name":"Roofing (Metal)","isActive":false},
+{"id":4,"name":"Roofing (Asphalt)","isActive":true},
+{"id":5,"name":"Construction Clean and Final Clean","isActive":true},
+{"id":6,"name":"Asphalt Paving","isActive":false},
+{"id":7,"name":"Elevator","isActive":false},
+{"id":8,"name":"Drywall & Acoustical (FED)","isActive":true},
+{"id":9,"name":"Masonry & Precast","isActive":true},
+{"id":10,"name":"RF Shielding","isActive":false}]

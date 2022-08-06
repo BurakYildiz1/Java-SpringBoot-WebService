@@ -1,0 +1,5 @@
+[{"id":1,"fullName":"Sayres Pestell","eMail":"test@test.com","password":"123","isActive":true},
+{"id":2,"fullName":"Burk Mattack","eMail":"bmattack1@youku.com","password":"yPBp7MM6Ah","isActive":false},
+{"id":3,"fullName":"Briana Dryden","eMail":"bdryden2@vk.com","password":"wT7iWJj","isActive":false},
+{"id":4,"fullName":"Codee Lidgett","eMail":"clidgett3@ask.com","password":"SXCqW565PIi","isActive":true},
+{"id":5,"fullName":"Lidia Tiller","eMail":"ltiller4@cisco.com","password":"8nSGNf","isActive":false}]
