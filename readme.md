@@ -52,7 +52,7 @@ http://localhost:8080/products/getProducts
 2-Kategori ürünü listele
 Parametreler(get)categoryId
 
-http://localhost:8080/products/listProduct/{categoryId}
+http://localhost:8080/products/listProducts?categoryId=2
 
 #Category
 
