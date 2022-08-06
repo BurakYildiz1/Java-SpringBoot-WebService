@@ -1,13 +1,9 @@
 package com.webservice.demo.controller;
-import com.google.gson.Gson;
 import com.webservice.demo.model.LoginModel;
 import com.webservice.demo.model.UserModel;
 import com.webservice.demo.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.List;
 
 @RestController
