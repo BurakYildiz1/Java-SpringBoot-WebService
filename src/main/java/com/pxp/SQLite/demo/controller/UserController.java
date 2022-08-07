@@ -21,11 +21,14 @@ public class UserController {
 
     //@RequestMapping(value = "info",method = RequestMethod.GET)
     @PostMapping("/login")
-    public User tryLogin(@RequestBody Login user){
+    public boolean tryLogin(@RequestBody Login user){
 
         User usr= userRepository.findAll().stream().filter(x-> Objects.equals(x.geteMail(),user.geteMail() )&& Objects.equals(x.getPassword(),user.getPassword())).findFirst().get();
 
-        return usr;
+        if(usr!=null)
+            return true;
+
+        return false;
     }
 
 
