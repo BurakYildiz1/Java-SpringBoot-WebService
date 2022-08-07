@@ -35,16 +35,18 @@ public class ProductService {
 
     @Transactional
     public String updateProduct(Product product){
-        if (productRepository.existsByName(product.getName())){
+        if (productRepository.existsById(product.getId())){
             try {
-                List<Product> products = productRepository.findByName(product.getName());
-                products.stream().forEach(s -> {
-                    Product productToBeUpdate = productRepository.findById(s.getId()).get();
-                    productToBeUpdate.setName(product.getName());
-                    productToBeUpdate.setImageUrl(product.getImageUrl());
-                    productToBeUpdate.setCategoryId(product.getCategoryId());
-                    productRepository.save(productToBeUpdate);
-                });
+                Product productToBeUpdate = productRepository.findById(product.getId()).get();
+
+                productToBeUpdate.setName(product.getName());
+                productToBeUpdate.setImageUrl(product.getImageUrl());
+                productToBeUpdate.setCategoryId(product.getCategoryId());
+                productToBeUpdate.setPrice(product.getPrice());
+                productToBeUpdate.setActive(product.isActive());
+
+                productRepository.save(productToBeUpdate);
+
                 return "Product record updated.";
             }catch (Exception e){
                 throw e;

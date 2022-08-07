@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/product")
@@ -24,13 +25,22 @@ public class ProductController {
         return "The application is up!";
     }
 
-    @GetMapping("/productdetail")
-    public Product detailProduct(int id){
+    @GetMapping("/{id}")
+    public Product detailProduct(@PathVariable(value = "id") int id){
 
         Product product= productRepository.findAll().stream().filter(x->x.getId()==id).findFirst().get();
 
         return product;
     }
+
+    //Get productList by CategoryId
+    @GetMapping("/getbycategory")
+    public List<Product> getByCategoryId(int id){
+        List<Product> productList=productRepository.findAll().stream().filter(x->x.getCategoryId()==id).collect(Collectors.toList());
+
+        return productList;
+    }
+
 
     @RequestMapping(value = "/createproduct",method = RequestMethod.POST)
     public String createProduct(@RequestBody Product product){
