@@ -48,7 +48,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/updateuser",method = RequestMethod.PUT)
-    public String uptadeUser(@RequestBody User user){
+    public String updateUser(@RequestBody User user){
         return userService.updateUser(user);
     }
 
