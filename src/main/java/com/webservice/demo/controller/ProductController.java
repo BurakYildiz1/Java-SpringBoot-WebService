@@ -29,4 +29,9 @@ public class ProductController {
     public List<ProductModel> ListProducts(int categoryId){
         return ProductRepository.listProducts(categoryId);
     }
+
+    @GetMapping("/details")
+    public List<ProductModel> DetailProducts(int Id){
+        return ProductRepository.detailsProducts(Id);
+    }
 }

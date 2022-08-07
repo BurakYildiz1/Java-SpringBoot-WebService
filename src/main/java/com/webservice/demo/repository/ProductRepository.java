@@ -51,4 +51,23 @@ public class ProductRepository {
         return collect;
     }
 
+    public static List<ProductModel> detailsProducts(int Id){
+
+        List<ProductModel> listproducts=null;
+        try {
+            // create Gson instance
+            Gson gson = new Gson();
+
+            // create a reader
+            Reader reader = Files.newBufferedReader(Paths.get("src/main/resources/static/ProductData.json"));
+
+            // convert JSON array to list of users
+            listproducts = gson.fromJson(reader, new TypeToken<List<ProductModel>>() {}.getType());
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        List<ProductModel> collect = listproducts.stream().filter(p -> p.getId() == Id).collect(Collectors.toList());
+        return collect;
+    }
 }

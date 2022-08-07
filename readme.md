@@ -54,6 +54,11 @@ Parametreler(get)categoryId
 
 http://localhost:8080/products/listProducts?categoryId=2
 
+3-Ürün detay
+Parametreler(get)Id
+
+http://localhost:8080/products/details?Id=2
+
 #Category
 
 http://localhost:8080/categories/getCategories
